@@ -1,0 +1,13 @@
+.DS_Store
+.ipynb_checkpoints
+data
+parsed_data
+**/data
+**/parsed_data
+**/data2
+**/data3
+**/*.npz
+**/*.ipynb_checkpoints
+*.npz
+*.ipynb_checkpoints
+__pycache__
