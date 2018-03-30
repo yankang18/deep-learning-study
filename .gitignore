@@ -2,7 +2,9 @@
 .ipynb_checkpoints
 data
 parsed_data
+cache
 **/data
+**/cache
 **/parsed_data
 **/data2
 **/data3
