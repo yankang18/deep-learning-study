@@ -1,9 +1,11 @@
 .DS_Store
 .ipynb_checkpoints
 data
+datasets
 parsed_data
 cache
 **/data
+**/datasets
 **/cache
 **/parsed_data
 **/data2
