@@ -5,6 +5,7 @@ datasets
 parsed_data
 cache
 **/data
+**/checkpoints
 **/datasets
 **/cache
 **/parsed_data
