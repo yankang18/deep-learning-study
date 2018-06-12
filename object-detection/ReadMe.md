@@ -89,7 +89,8 @@ for i in range(H):
 <center><img src='images/two_anchor_boxes.png'></img></center>
 
 * The training image label encoding for two anchor boxes is:
-<center><img src='images/anchor_box_label.png'></img></center>
+	<center><img src='images/anchor_box_label.png'></img></center>
+	
 	* Since we are using 2 anchor boxes, each of the 3 x 3 cells thus encodes information about 2 boxes. Anchor boxes are defined by their midpoint (x, y), width and height, and class labels. Therefore the label encoding in this particular example should have shape of (3, 3, 2, 8)
 	* Here, we flattened the last two last dimensions of the shape (3, 3, 2, 8) encoding. So the output of the deep CNN is (3, 3, 16).
 
@@ -101,6 +102,7 @@ for i in range(H):
 	* Let's specify label for the lower middle grid cell (2, 1) that has two anchor boxes:
 	* The people is more similar to the shape of anchor box 1 while the car is more similar to the shape of anchor box 2. Therefore, the label y should be:
 	<center><img src='images/anchor_box_label_example.png'></img></center>
+	
 	* Now, let's assume that the people in the image is gone and only car left. Then, the label y for this scenario should be:
 <center><img src='images/anchor_box_label_example_2.png'></img></center>
 
@@ -111,7 +113,8 @@ for i in range(H):
 	
 ## Intersection over Union (IoU)
 * IoU is a way to evaluate whether a predicted bounding box (i.e., object) is accurate or not by comparing the predicted bounding box with the ground truth bounding box.  
-<img src='images/IoU.png'></img>
+	<img src='images/IoU.png'></img>
+	
 	* In the image above, the red box is the ground truth bounding box while the blue box is the predicted bounding box by the algorithm.
 	* The 0.5 is the threshold for the IoU algorithm. We can adjust this hyperparameter according to specific scenario.
 	* It is used by Non-max suppression to determine whether two bounding boxes overlop with each other.
@@ -126,7 +129,8 @@ for i in range(H):
 
 * Non-max suppression algorithm
 	* On the below 19 by 19 grid, we are going to have 19 by 19 prediction vectors, each of which is (Pc, bx, by, bh, bw) 
-<center><img src='images/19_x_19_grid.png'></img></center>
+	<center><img src='images/19_x_19_grid.png'></img></center>
+	
 	* Non-max suppression algorithm utilizes IoU 
 	* The algorithm goes like:
 		* For each of the 19 X 19 predictions, discard all boxes with low Pc, meaning boxes are not very confident about detecting objects (e.g., <= 0.6, we can adjust this hyperparameters). (Note that this part actually is independent from NMS. It can serve as the first filter to filter out unqualified bounding boxes)
