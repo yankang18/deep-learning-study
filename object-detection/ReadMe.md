@@ -162,6 +162,7 @@ for i in range(H):
 ### Make predictions
 * Given an image, the neural network will output 3 X 3 X 16 volume, which contains a prediction vector with 16 units for each of the nine grid cells. 
 	<center><img src='images/YOLO_prediction_1.png'></img></center>
+	
 	* We may encode the output as a 3 X 3 X 2 X 8 matrix
 		* 3 X 3 is the grid
 		* 2 indicates the number of anchor boxes.
