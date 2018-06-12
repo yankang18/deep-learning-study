@@ -15,4 +15,5 @@ cache
 **/*.ipynb_checkpoints
 *.npz
 *.ipynb_checkpoints
+**/yolo.h5
 __pycache__
