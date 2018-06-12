@@ -170,6 +170,7 @@ for i in range(H):
 * Apply filters
 	* If using two anchor boxes, for each of the nine grid cells, we get two predicted bounding boxes. Therefore there are 18 bounding boxes. For large grid (e.g., 19 X 19) with many predefined anchor boxes (e.g. 5), there are 19 X 19 X 5 number of bounding boxes. We may filter out some of those bounding boxes for better prediction.
 	<center><img src='images/YOLO_prediction_2.png'></img><br/><span style='font-size:12px'>Notice that some of the bounding boxes can go outside the height and width of the grid cell that they come from</span></center>
+	
 	* First filter: Get rid of bounding boxes with low prediction confidence.
 	* Second filter: Apply Non-Max suppresson to avoid selecting overlapping bounding boxes. 
 
