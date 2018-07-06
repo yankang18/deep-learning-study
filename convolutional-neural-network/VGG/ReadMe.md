@@ -11,7 +11,7 @@ VGG is a convolutional neural network, which is a type of deep neural network th
 * pooling layer, and
 * fully-connected layer.
 
-VGG is a group of CNN architectures that each with number of layers. Figure below shows the configurations for different VGG architectures.
+VGG is a group of CNN architectures that each with different number of layers. Figure below shows the configurations for different VGG architectures.
 
 <img src='images/vgg_architectures.png'>
 
