@@ -119,7 +119,7 @@ LSTM has three different gates that regulate information flow in an LSTM cell:
 * An input gate, 
 * An output gate.
 
-### Forget gate
+### Forget Gate
 
 The forget gate decides what information should be thrown away or kept. 
 
